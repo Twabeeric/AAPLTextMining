@@ -62,7 +62,7 @@ Results - Topic Modeling
 
 DeutscheBank Analyst Statements
 The DeutscheBank data was modeled using 3 topics. The first topic included words like ‘homage’, ‘iconic’, ‘enhancement’ and ‘buzz’. The second topic included ‘home’, ‘google’, ‘amazon’. The third topic included ‘new’, ‘smartphone’, and ‘growth’. From these words, it seems like the first topic is related to product design and how new products are marketed and received. The second topic seems clearly to be about competitors. The third is trickier to understand but seems to be related to the health of the company going forward. Below, you can see the top 10 words of each topic.
-
+```
           word_0	 word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9
           
 ## Table
@@ -70,7 +70,7 @@ Topic_0	 homage	ionic	authenticate	enhancement	curve	touchid	buzz	surprise	repla
 Topic_1	 home	device	google	amazon	smart	vpa	company	assistant	user	year
 Topic_2	 com	new	include	smartphone	growth	www	accord	company	news	risk
 
-
+```
 
 
 These 3 topics had different levels of relevance to each document. Topic 2 was the dominant topic in most of the documents, followed by Topic 1. Topic 0 never dominated but had a small association with each of the documents. The regression results indicate that topic association is not highly related to weekend price changes. While all of the topics had positive coefficients, none of these coefficients were statistically different than 0. 
@@ -78,23 +78,23 @@ These 3 topics had different levels of relevance to each document. Topic 2 was t
 Apple Financial Statements
 The Apple financial statements were modeled using 2 topics. It was hard to find a number of topics that resulted in very different groupings of words. Since only 2 topics yielded associations that were meaningful, we decided to use 2 topics. However, trying to figure out the difference between the 2 topics proved somewhat useless. Both topics mainly used words like ‘product’, ‘net’, ‘sale’, ‘tax’, and other words related to financial accounting. Further along in the word importance, some small differences did appear. Topic 0 included the word ‘billion’ and ‘end’. Topic 1 included the word ‘apple’, ‘service’ and ‘september’. These differences hardly make it any easier to discern the real meaning behind the two topics. The top 10 words of each topic are shown in the table below.
 
-
+```
 
         word_0	word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9       
  ## Table       
 Topic_0	product	net	sale	may	tax	financial	end	include	could	billion
 Topic_1	product	sale	net	tax	financial	include	apple	service	september	may
 
-
+```
 Topic 0 was the dominant topic in all but 2 of the 8 documents in this case. When matching these documents to the change in weekend price, it turns out there were only 3 that matched with any non-zero change. With such a small sample, regression is unlikely to tell us anything about the relationship between these documents and stock price. However, the changes that did exist were small and the sign of the change did not depend on topic dominance. Those changes are shown in the table below.
-
+```
 ## Table
 doc_title	    Topic_0	Topic_1	dominant_topic	date	Price Change
 02022018.docx	0.9201	0.0799	0	              2/2/2018	-0.87%
 06022018.docx	0.9535	0.0465	0	              6/2/2018	0.73%
 11032017.docx	0.1886	0.8114	1	              11/3/2017	-0.08%
 
-
+```
 
 Results - Sentiment Analysis:
 
