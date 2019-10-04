@@ -65,6 +65,8 @@ DeutscheBank Analyst Statements
 The DeutscheBank data was modeled using 3 topics. The first topic included words like ‘homage’, ‘iconic’, ‘enhancement’ and ‘buzz’. The second topic included ‘home’, ‘google’, ‘amazon’. The third topic included ‘new’, ‘smartphone’, and ‘growth’. From these words, it seems like the first topic is related to product design and how new products are marketed and received. The second topic seems clearly to be about competitors. The third is trickier to understand but seems to be related to the health of the company going forward. Below, you can see the top 10 words of each topic.
 
           word_0	 word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9
+          
+          
 Topic_0	 homage	ionic	authenticate	enhancement	curve	touchid	buzz	surprise	replaces	macos
 Topic_1	 home	device	google	amazon	smart	vpa	company	assistant	user	year
 Topic_2	 com	new	include	smartphone	growth	www	accord	company	news	risk
@@ -80,6 +82,8 @@ The Apple financial statements were modeled using 2 topics. It was hard to find 
 
 
         word_0	word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9
+        
+        
 Topic_0	product	net	sale	may	tax	financial	end	include	could	billion
 Topic_1	product	sale	net	tax	financial	include	apple	service	september	may
 
