@@ -1,4 +1,4 @@
-# Apple-Stock-Text-Mining
+# Apple Stock Text Mining
 April 29, 2019
 
 Text Mining Final Report
