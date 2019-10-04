@@ -145,13 +145,13 @@ Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsMcDonaldDeutscheReports.png">
 ## Exhibit 6
 Exhibit 6: Comparison between AAPL Price and McDonald sentiment score for Apple Financial Reports
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsMcDonaldAppleFinancialReports.png.png">	
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsMcDonaldAppleFinancialReports.png">	
 ## Exhibit 7
 Exhibit 7: Comparison between AAPL Volume and McDonald sentiment score for Apple Financial Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsMcDonaldAppleFinancialReports.png">
 ## Exhibit 8
 Exhibit 8: Comparison between AAPL Price and Bing Liu  sentiment score for Deutsche Bank Reports
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsBingDeutscheReports.png.png">
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsBingDeutscheReports.png">
 ## Exhibit 9
 Exhibit 9: Comparison between AAPL Volume and Bing Liu  sentiment score for Deutsche Bank Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsBingDeutscheReports.png">
