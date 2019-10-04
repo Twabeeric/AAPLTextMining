@@ -1,5 +1,4 @@
 # Apple-Stock-Text-Mining
-Daniel Schinder, Dylan Bates, Eric Ontieri
 April 29, 2019
 
 Text Mining Final Report
