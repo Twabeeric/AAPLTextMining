@@ -66,7 +66,7 @@ The DeutscheBank data was modeled using 3 topics. The first topic included words
 
           word_0	 word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9
           
-          
+## Table
 Topic_0	 homage	ionic	authenticate	enhancement	curve	touchid	buzz	surprise	replaces	macos
 Topic_1	 home	device	google	amazon	smart	vpa	company	assistant	user	year
 Topic_2	 com	new	include	smartphone	growth	www	accord	company	news	risk
@@ -81,15 +81,15 @@ The Apple financial statements were modeled using 2 topics. It was hard to find 
 
 
 
-        word_0	word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9
-        
-        
+        word_0	word_1	word_2	word_3	word_4	word_5	word_6	word_7	word_8	word_9       
+ ## Table       
 Topic_0	product	net	sale	may	tax	financial	end	include	could	billion
 Topic_1	product	sale	net	tax	financial	include	apple	service	september	may
 
 
 Topic 0 was the dominant topic in all but 2 of the 8 documents in this case. When matching these documents to the change in weekend price, it turns out there were only 3 that matched with any non-zero change. With such a small sample, regression is unlikely to tell us anything about the relationship between these documents and stock price. However, the changes that did exist were small and the sign of the change did not depend on topic dominance. Those changes are shown in the table below.
 
+## Table
 doc_title	    Topic_0	Topic_1	dominant_topic	date	Price Change
 02022018.docx	0.9201	0.0799	0	              2/2/2018	-0.87%
 06022018.docx	0.9535	0.0465	0	              6/2/2018	0.73%
@@ -127,19 +127,57 @@ Conclusion
 
 Topic modeling did not reveal any relevant correlations between the analyzed texts and weekend stock price changes. Furthermore, topics in these texts were very difficult to discover. It is possible that these texts do not lend themselves to topic analysis due to their highly specialized purpose. It is likely that the humans creating these documents did not intend to cover multiple topics, and searching for more than one via algorithm is meaningless. We believe this is especially the case with the Apple financial statements, which basically cover the same topics with updated information in each release. One weakness of our analysis is that linear regression is a limited way to find relationships in any dataset. It is possible that the topics discovered here may be useful predictors in a more advanced machine learning model, but that is outside of the scope of this paper. For now, we have found little evidence that topic modeling of DeutscheBank analyst reports and Apple financial statements are predictive of very short term stock performance.
 
-
+## Exhibit 1
+ Exhibit 1: Apple Stock Price and Volume
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevVolume.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/VADERvsMcDonaldvsBingLiuAppleFinancialReports.png">
+## Exhibit 2
+Exhibit 2: Comparison between VADER, McDonald and Bing Liu Sentiment Scores for Deutsche Bank Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/VADERvsMcDonaldvsBingLiuDeutscheReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsBingAppleFinancialReports.png">
+## Exhibit 3
+Exhibit 3: Comparison between VADER, McDonald and Bing Liu Sentiment Scores for Apple Financial  Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/VADERvsMcDonaldvsBingLiuAppleFinancialReports.png">
+## Exhibit 4
+Exhibit 4: Comparison between AAPL Price and McDonald sentiment score for Deutsche Bank Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsMcDonaldDeutscheReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsVADERAppleFinancialReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsVADERDeutscheReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsBingAppleFinancialReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsBingDeutscheReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsMcDonaldAppleFinancialReports.png">
+## Exhibit 5
+Exhibit 5: Comparison between AAPL Volume and McDonald sentiment score for Deutsche Bank 
+Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsMcDonaldDeutscheReports.png">
-<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsVADERAppleFinancialReports.png">
+## Exhibit 6
+Exhibit 6: Comparison between AAPL Price and McDonald sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsMcDonaldAppleFinancialReports.png.png">	
+## Exhibit 7
+Exhibit 7: Comparison between AAPL Volume and McDonald sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsMcDonaldAppleFinancialReports.png">
+## Exhibit 8
+Exhibit 8: Comparison between AAPL Price and Bing Liu  sentiment score for Deutsche Bank Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsBingDeutscheReports.png.png">
+## Exhibit 9
+Exhibit 9: Comparison between AAPL Volume and Bing Liu  sentiment score for Deutsche Bank Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsBingDeutscheReports.png">
+## Exhibit 10
+Exhibit 10: Comparison between AAPL Price and Bing Liu  sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsBingAppleFinancialReports.png">
+## Exhibit 11
+Exhibit 11: Comparison between AAPL Volume and Bing Liu  sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsBingAppleFinancialReports.png">
+## Exhibit 12
+Exhibit 12: Comparison between AAPL Price and VADER sentiment score for Deutsche Bank Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsVADERDeutscheReports.png">
+## Exhibit 13
+Exhibit 13: Comparison between AAPL Volume and VADER sentiment score for Deutsche Bank Reports
 <img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsVADERDeutscheReports.png">
+## Exhibit 14
+Exhibit 14: Comparison between AAPL Price and VADER sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLVolumevsVADERAppleFinancialReports.png">
+## Exhibit 15
+Exhibit 15: Comparison between AAPL Volume and VADER sentiment score for Apple Financial Reports
+<img width="800" src="https://github.com/Twabeeric/Apple-Stock-Text-Mining/blob/master/AAPLPricevsVADERAppleFinancialReports.png">
+
+
+
+
+
+
 
 
